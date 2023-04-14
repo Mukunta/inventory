@@ -1,0 +1,28 @@
+.login-form {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #ddd;
+}
+
+.login-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+}
+
