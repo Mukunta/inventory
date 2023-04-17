@@ -36,35 +36,25 @@
       </nav>
 
       <!-- main container -->
-      <div class="container">
-        <div class="card p-4 shadow">
-          <form>
-            <div class="mb-3">
-              <label for="item-name" class="form-label">Item Name</label>
-              <input type="text" class="form-control" id="item-name" name="item-name" required>
-            </div>
-            <div class="mb-3">
-              <label for="quantity" class="form-label">Quantity</label>
-              <input type="number" class="form-control" id="quantity" name="quantity" required>
-            </div>
-            <div class="mb-3">
-              <label for="price" class="form-label">Price</label>
-              <input type="number" class="form-control" id="price" name="price" required>
-            </div>
-            <div class="mb-3">
-              <label for="transaction-type" class="form-label">Transaction Type</label>
-              <select class="form-select" id="transaction-type" name="transaction-type" required>
-                <option value="">Select transaction type</option>
-                <option value="sale">Sale</option>
-                <option value="purchase">Purchase</option>
-              </select>
-            </div>
-            <div class="mb-3">
-              <label for="transaction-date" class="form-label">Transaction Date</label>
-              <input type="date" class="form-control" id="transaction-date" name="transaction-date" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+      <div class="container mt-4">
+        <!-- section for selling items -->
+        <div class="card p-4">
+            <h2>Sell Item</h2>
+            <form action="sell_item.php" method="post">
+              <div class="form-group">
+                <label for="item_name">Item Name:</label>
+                <input type="text" class="form-control" id="item_name" name="item_name" required>
+              </div>
+              <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" class="form-control" id="quantity" name="quantity" min="1" required>
+              </div>
+              <div class="form-group">
+                <label for="price">Price:</label>
+                <input type="number" class="form-control" id="price" name="price" min="0" step="0.01" required>
+              </div>
+              <button type="submit" class="btn btn-primary mt-3">Sell Item</button>
+            </form>
         </div>
       </div>
       

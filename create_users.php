@@ -22,6 +22,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Execute the query and check for errors
     if ($stmt->execute() === TRUE) {
         echo "New user created successfully!";
+        // User created successfully, show success message
+        echo '<script type="text/javascript">$("#myModal").modal("show");</script>';
     } else {
         echo "Error: " . $stmt->error;
     }
